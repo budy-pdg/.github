@@ -1,3 +1,3 @@
 # .github
 
-Ce repository a pour but de stocker et de propager la documentation.
+Ce dépôt a pour but de stocker et de propager la documentation.

@@ -1,2 +1,3 @@
 # .github
-This repository serves to add general documentation for our entire project.
+
+Ce repository a pour but de stocker et de propager la documentation.

@@ -41,7 +41,7 @@ Instructions d’installation de l'application : [Installation](../docs/installa
 
 ## Architecture
 
-Description technique de l’architecture : [Architecture](../docs/architecture.md)
+Description technique de l’architecture (dont le processus de CI/CD) : [Architecture](../docs/architecture.md)
 
 ## Utilisation
 

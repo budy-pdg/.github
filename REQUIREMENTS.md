@@ -48,7 +48,7 @@
 16.	Recevoir une demande, la réception d’une réponse à une demande faite, ou se faire retirer de la liste d’amis de quelqu’un devrait envoyer une notification sur lequel l’application est installée (si l’application a le droit d’envoyer des notifications). Elle rajoute aussi dans tous les cas la notification au stockage interne à l’application.
 17.	Un utilisateur devrait pouvoir mettre un poste comme favori.
 18.	Un utilisateur devrait pouvoir filtrer pour ne voir que ses postes mis en favoris (ajout d’autres options de filtrage plus tard).
-19.	Un utilisateur devrait pouvoir
+19.	Un utilisateur devrait pouvoir retirer un poste de ses favoris.
 20.	Un utilisateur devrait pouvoir aller sur la page d’un de ces postes, et obtenir le poste détaillé, contenant toutes les informations du poste. Ceci pourrait inclure :
     1.	Un titre au poste
     2.	Une image reliée

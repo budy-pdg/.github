@@ -42,26 +42,25 @@
     2.	Le nom de l’alerte
     3.	La sévérité de l’alerte
     4.	La période d’activation (début, et si applicable, fin)
-13.	Un utilisateur devrait pouvoir aller sur la partie communautaire de l’application, et voir les postes de ses amis, sous la forme d’une liste contenant des informations minimales sur chacun des postes.
-14.	Un utilisateur devrait avoir l’options de faire des demandes d’amitié, et d’accepter ou refuser de telles demandes qui lui seraient faites.
-15.	Un utilisateur devrait pouvoir supprimer des gens de sa liste d’amis.
-16.	Recevoir une demande, la réception d’une réponse à une demande faite, ou se faire retirer de la liste d’amis de quelqu’un devrait envoyer une notification sur lequel l’application est installée (si l’application a le droit d’envoyer des notifications). Elle rajoute aussi dans tous les cas la notification au stockage interne à l’application.
-17.	Un utilisateur devrait pouvoir mettre un poste comme favori.
-18.	Un utilisateur devrait pouvoir filtrer pour ne voir que ses postes mis en favoris (ajout d’autres options de filtrage plus tard).
-19.	Un utilisateur devrait pouvoir
-20.	Un utilisateur devrait pouvoir aller sur la page d’un de ces postes, et obtenir le poste détaillé, contenant toutes les informations du poste. Ceci pourrait inclure :
+13.	Un utilisateur devrait pouvoir aller sur la partie communautaire de l’application, et voir les postes des personnes qu'il suit, sous la forme d’une liste contenant des informations minimales sur chacun des postes.
+14.	Un utilisateur devrait avoir l’options de faire suivre des gens (via leur username), et ce de manière unilattérale (pas de notions d'accepter des demandes).
+15.	Un utilisateur devrait pouvoir arrêter de suivre des gens.
+16.	Un utilisateur devrait pouvoir mettre un poste comme favori.
+17.	Un utilisateur devrait pouvoir filtrer pour ne voir que ses postes mis en favoris (ajout d’autres options de filtrage plus tard).
+18.	Un utilisateur devrait pouvoir retirer un poste de ses favoris.
+19.	Un utilisateur devrait pouvoir aller sur la page d’un de ces postes, et obtenir le poste détaillé, contenant toutes les informations du poste. Ceci pourrait inclure :
     1.	Un titre au poste
     2.	Une image reliée
     3.	Une plante reliée
     4.	Un message
     5.	Les commentaires et réponses au poste
-21.	L’utilisateur devrait pouvoir commenter sur un poste, ou répondre à un commentaire, sous la forme de texte.
-22.	L’utilisateur devrait pouvoir supprimer son commentaire ou sa réponse, laissant un message à la place semblable à « Message supprimé ».
-23.	L’utilisateur recevra des notifications sur l’appareil sur lequel l’application est installée (si l’application a le droit d’envoyer des notifications) si/quand un autre utilisateur répond à un de ses commentaires/à une de ses réponses. Elle rajoute aussi dans tous les cas la notification au stockage interne à l’application.
-24.	L’utilisateur devrait pouvoir ajouter un poste, contenant toutes ou seulement certaines des informations mentionnées ci-dessus (obligatoire : titre, message ; optionnel : plante reliée, image).
-25.	L’utilisateur devrait recevoir des notifications sur l’appareil sur lequel l’application est installée (si l’application a le droit d’envoyer des notifications) si/quand un autre utilisateur commente sur le poste. Elle rajoute aussi dans tous les cas la notification au stockage interne à l’application.
-26.	L’utilisateur devrait pouvoir supprimer son poste, supprimant toutes les informations, commentaires, réponses, images, etc. y étant relié.
-27.	L’utilisateur devrait avoir une visualisation sur les notifications reçues dans l’application, permettant un accès rapide aux informations concernées. 
+20.	L’utilisateur devrait pouvoir commenter sur un poste, ou répondre à un commentaire, sous la forme de texte.
+21.	L’utilisateur devrait pouvoir supprimer son commentaire ou sa réponse, laissant un message à la place semblable à « Message supprimé ».
+22.	L’utilisateur recevra des notifications sur l’appareil sur lequel l’application est installée (si l’application a le droit d’envoyer des notifications) si/quand un autre utilisateur répond à un de ses commentaires/à une de ses réponses. Elle rajoute aussi dans tous les cas la notification au stockage interne à l’application.
+23.	L’utilisateur devrait pouvoir ajouter un poste, contenant toutes ou seulement certaines des informations mentionnées ci-dessus (obligatoire : titre, message ; optionnel : plante reliée, image).
+24.	L’utilisateur devrait recevoir des notifications sur l’appareil sur lequel l’application est installée (si l’application a le droit d’envoyer des notifications) si/quand un autre utilisateur commente sur le poste. Elle rajoute aussi dans tous les cas la notification au stockage interne à l’application.
+25.	L’utilisateur devrait pouvoir supprimer son poste, supprimant toutes les informations, commentaires, réponses, images, etc. y étant relié.
+26.	L’utilisateur devrait avoir une visualisation sur les notifications reçues dans l’application, permettant un accès rapide aux informations concernées. 
 
 ## Exigences non-fonctionnelles
 

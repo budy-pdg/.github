@@ -3746,16 +3746,16 @@
 									},
 									"font": "Arial;13;0",
 									"parentStyle": false,
-									"left": 736,
+									"left": 729,
 									"top": 523,
-									"width": 7.22998046875,
+									"width": 21.68359375,
 									"height": 13,
 									"alpha": -0.785397935031916,
 									"distance": 18.384776310850235,
 									"hostEdge": {
 										"$ref": "AAAAAAGYy/OCGKVfmTs="
 									},
-									"text": "1"
+									"text": "0..1"
 								},
 								{
 									"_type": "UMLQualifierCompartmentView",
@@ -4670,7 +4670,7 @@
 							"font": "Arial;13;0",
 							"parentStyle": false,
 							"left": 816,
-							"top": 568,
+							"top": 552,
 							"width": 137,
 							"height": 103,
 							"text": "A comment, if it's a response to a comment, must respond to a comment from the same post, with an earlier timestamp"
@@ -8081,9 +8081,9 @@
 									},
 									"font": "Arial;13;0",
 									"parentStyle": false,
-									"left": 711,
+									"left": 710,
 									"top": 520,
-									"width": 5.05908203125,
+									"width": 6.5,
 									"height": 13,
 									"alpha": 0.785397830063865,
 									"distance": 14.142135623730951,
@@ -10129,8 +10129,8 @@
 							"left": 816,
 							"top": 384,
 							"width": 137,
-							"height": 103,
-							"text": "A user can't have a notification about their own comment, or about a post that they don't follow unless it's a direct response to them"
+							"height": 80,
+							"text": "A user can't have a notification about their own comment, or about a post that they don't follow"
 						},
 						{
 							"_type": "UMLTextBoxView",
@@ -10141,7 +10141,7 @@
 							"font": "Arial;13;0",
 							"parentStyle": false,
 							"left": 816,
-							"top": 528,
+							"top": 512,
 							"width": 137,
 							"height": 38,
 							"text": "No timestamp can be of a time in the futur"
@@ -10169,7 +10169,7 @@
 							"font": "Arial;13;0",
 							"parentStyle": false,
 							"left": 816,
-							"top": 488,
+							"top": 472,
 							"width": 137,
 							"height": 38,
 							"text": "A user can't follow themselves"
@@ -10344,7 +10344,8 @@
 							"_parent": {
 								"$ref": "AAAAAAGYy+4iwlj3Xi4="
 							},
-							"name": "id"
+							"name": "id",
+							"type": ""
 						}
 					]
 				},
@@ -10822,7 +10823,7 @@
 								"reference": {
 									"$ref": "AAAAAAGYy+4iwlj3Xi4="
 								},
-								"multiplicity": "1"
+								"multiplicity": "0..1"
 							}
 						},
 						{
@@ -10889,7 +10890,8 @@
 							"_parent": {
 								"$ref": "AAAAAAGYy+52pFnJ5Zs="
 							},
-							"name": "deleted"
+							"name": "deleted",
+							"type": ""
 						}
 					]
 				},

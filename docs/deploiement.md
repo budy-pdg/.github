@@ -1,6 +1,6 @@
 # Déploiement
 
-Lien vers les différents deploiement disponible pour chaque partie de l'application :
+Lien vers les différents déploiements disponibles pour chaque partie de l'application :
 
 - [Backend](https://github.com/budy-pdg/budy-backend/blob/main/README.md)
 - [Frontend](https://github.com/budy-pdg/budy-app/blob/main/README.md)

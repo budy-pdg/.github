@@ -11,57 +11,49 @@
 
 ## Exigences fonctionnelles
 
-1.	Un utilisateur devrait avoir la capacité de se créer un compte sur l’application à l’aide d’un nom d’utilisateur unique, d’une adresse email unique, et d’un mot de passe.
-2.	Un utilisateur devrait pouvoir se connecter à l’application via son adresse email et son mot de passe.
-3.	Un utilisateur devrait être capable de changer son mot de passe, son nom d’utilisateur, et de se rajouter une/retirer son/changer son image de profile.
+1.	Un utilisateur devrait avoir la capacité de se créer un compte sur l’application à l’aide d’un nom d’utilisateur unique, d’une adresse email unique, et d’un mot de passe (6 charactères ou plus).
+2.	Un utilisateur devrait pouvoir se connecter à l’application via son username et son mot de passe.
+3.	Un utilisateur devrait être capable de se rajouter une/retirer son/changer son image de profile.
 4.	Un utilisateur devrait pouvoir se déconnecter.
 5.	Un utilisateur devrait avoir un aperçu rapide de ses plantes dans une liste sur une page dédiée, où des informations basiques sur chaque plante et leur état devrait être mentionné.
 6.	Un utilisateur devrait pouvoir générer une entrée dans sa liste de plantes
-    1.	Obligatoire : lui attribuer un nom unique (unique parmi sa propre liste, plusieurs utilisateurs peuvent avoir le même nom de plante).
+    1.	Obligatoire : lui attribuer un nom
     2.	Optionnel : renseigner le type de la plante parmi celles de notre database, si présente, afin d’obtenir des alertes préconfigurées
-7.	Un utilisateur devrait pouvoir filtrer/trier la liste de plantes selon plusieurs critères (« A un budy assigné », « Ordre alphabétique », etc.).
-8.	Un utilisateur devrait pouvoir, depuis cette liste, accéder à une page présentant les détails quant à la plante, ainsi que des options. Ces détails et options devraient inclure :
-    1.	Image(s), si assignée(s), ou/et de quoi ajouter une image
+7.	Un utilisateur devrait pouvoir, depuis cette liste, accéder à une page présentant les détails quant à la plante, ainsi que des options. Ces détails et options devraient inclure :
+    1.	Image, si assignée
     2.	Son nom
     3.	Ses statistiques actuelles (selon informations récoltées)
     4.	Des graphes de ses statistiques au cours du temps
-    5.	De quoi ajouter un budy si aucun budy n’est assigné, ou de quoi libérer le budy assigné s’il y en a un
-    6.	De quoi supprimer la plante de sa liste
-        1.	Si un budy est associé, le libère
-        2.	Les données des statistiques sont supprimées
-        3.	L’image est supprimée
-    7.	Configurer les alertes (voir plus loin pour les détails des alertes)
-9.	Un utilisateur devrait être capable, en ayant un budy pas encore assigné, de l’enregistrer à une plante (chaque budy ne peut être lié qu’à une plante à la fois).
-10.	Pour chaque plante ayant un budy assigné, l’application devrait faire de la collecte de données de manière régulière (configurable, pas inférieur à fréquence min.), et de stocker ces données pour une utilisation et un affichage ultérieur.
-11.	L’utilisateur devrait pouvoir, pour chaque plante, créer des alertes.
-    1.	Une alerte peut être active ou inactive. Une alerte ne peut être active que s’il y a un budy assigné. Une alerte peut être rendue inactive par l’utilisateur, supprimée par l’utilisateur, ou rendue active si elle respecte la condition ci-dessus.
-    2.	Quand une alerte active se déclenche, elle envoie une notification d’incident à l’appareil sur lequel l’application est installée (si l’application a le droit d’envoyer des notifications). Elle rajoute aussi dans tous les cas la notification au stockage interne à l’application.
-    3.	L’alerte est définie par un nom unique (par plante), et des conditions d’activation vérifiées périodiquement. Elle a aussi une sévérité. 
-12.	Un incident contiendra toutes les informations quant au déclenchement d’une alerte. Ceci inclut :
+    5.	Configurer les alertes (voir plus loin pour les détails des alertes)
+8.	Pour chaque plante ayant un budy assigné, l’application devrait faire de la collecte de données de manière régulière, et de stocker ces données pour une utilisation et un affichage ultérieur.
+9.	L’utilisateur devrait pouvoir, pour chaque plante, voir ses alertes.
+    1.	Une alerte peut être active ou inactive. Une alerte peut être rendue inactive par l’utilisateur, supprimée par l’utilisateur, ou rendue active par l'utilisateur.
+    2.	Quand une alerte active se déclenche, elle envoie un incident au stockage interne à l’application.
+    3.	L’alerte est définie par un nom, et des conditions d’activation vérifiées à l'arrivée de données. Elle a aussi une sévérité.
+    4. Une alerte ne devrait pas pouvoir se déclencher si elle s'est déjà déclenché récemment (période de 6h).
+10.	Un incident contiendra toutes les informations quant au déclenchement d’une alerte. Ceci inclut :
     1.	La plante concernée
     2.	Le nom de l’alerte
     3.	La sévérité de l’alerte
-    4.	La période d’activation (début, et si applicable, fin)
-13.	Un utilisateur devrait pouvoir aller sur la partie communautaire de l’application, et voir les postes de ses amis, sous la forme d’une liste contenant des informations minimales sur chacun des postes.
-14.	Un utilisateur devrait avoir l’options de faire des demandes d’amitié, et d’accepter ou refuser de telles demandes qui lui seraient faites.
-15.	Un utilisateur devrait pouvoir supprimer des gens de sa liste d’amis.
-16.	Recevoir une demande, la réception d’une réponse à une demande faite, ou se faire retirer de la liste d’amis de quelqu’un devrait envoyer une notification sur lequel l’application est installée (si l’application a le droit d’envoyer des notifications). Elle rajoute aussi dans tous les cas la notification au stockage interne à l’application.
-17.	Un utilisateur devrait pouvoir mettre un poste comme favori.
-18.	Un utilisateur devrait pouvoir filtrer pour ne voir que ses postes mis en favoris (ajout d’autres options de filtrage plus tard).
-19.	Un utilisateur devrait pouvoir
-20.	Un utilisateur devrait pouvoir aller sur la page d’un de ces postes, et obtenir le poste détaillé, contenant toutes les informations du poste. Ceci pourrait inclure :
+    4.	La date d'activation
+11.	Un utilisateur devrait pouvoir aller sur la partie communautaire de l’application, et voir les postes des personnes qu'il suit, sous la forme d’une liste contenant des informations minimales sur chacun des postes.
+12.	Un utilisateur devrait avoir l’options de suivre des gens (via leur username), et ce de manière unilattérale (pas de notions d'accepter des demandes).
+13.	Un utilisateur devrait pouvoir arrêter de suivre des gens.
+14.	Un utilisateur devrait pouvoir mettre un poste comme favori.
+15.	Un utilisateur devrait pouvoir retirer un poste de ses favoris.
+16.	Un utilisateur devrait pouvoir aller sur la page d’un de ces postes, et obtenir le poste détaillé, contenant toutes les informations du poste. Ceci pourrait inclure :
     1.	Un titre au poste
     2.	Une image reliée
     3.	Une plante reliée
     4.	Un message
     5.	Les commentaires et réponses au poste
-21.	L’utilisateur devrait pouvoir commenter sur un poste, ou répondre à un commentaire, sous la forme de texte.
-22.	L’utilisateur devrait pouvoir supprimer son commentaire ou sa réponse, laissant un message à la place semblable à « Message supprimé ».
-23.	L’utilisateur recevra des notifications sur l’appareil sur lequel l’application est installée (si l’application a le droit d’envoyer des notifications) si/quand un autre utilisateur répond à un de ses commentaires/à une de ses réponses. Elle rajoute aussi dans tous les cas la notification au stockage interne à l’application.
-24.	L’utilisateur devrait pouvoir ajouter un poste, contenant toutes ou seulement certaines des informations mentionnées ci-dessus (obligatoire : titre, message ; optionnel : plante reliée, image).
-25.	L’utilisateur devrait recevoir des notifications sur l’appareil sur lequel l’application est installée (si l’application a le droit d’envoyer des notifications) si/quand un autre utilisateur commente sur le poste. Elle rajoute aussi dans tous les cas la notification au stockage interne à l’application.
-26.	L’utilisateur devrait pouvoir supprimer son poste, supprimant toutes les informations, commentaires, réponses, images, etc. y étant relié.
-27.	L’utilisateur devrait avoir une visualisation sur les notifications reçues dans l’application, permettant un accès rapide aux informations concernées. 
+17.	L’utilisateur devrait pouvoir commenter sur un poste, ou répondre à un commentaire, sous la forme de texte.
+18.	L’utilisateur devrait pouvoir supprimer son commentaire ou sa réponse, laissant un message à la place semblable à « Message supprimé ».
+19.	L’utilisateur recevra des notifications dans le stockage interne à l'application si/quand un autre utilisateur répond à un de ses commentaires/à un de ses posts/dans un post qu'il suit.
+20.	L’utilisateur devrait pouvoir ajouter un poste, contenant toutes ou seulement certaines des informations mentionnées ci-dessus (obligatoire : titre ; optionnel : message, plante reliée, image).
+21.	L’utilisateur devrait pouvoir supprimer son poste, supprimant toutes les informations, commentaires, réponses, images, etc. y étant relié.
+22.	L’utilisateur devrait avoir une visualisation sur les notifications reçues dans l’application, permettant un accès rapide aux informations concernées. 
+23. L'utilisateur devrait pouvoir, de la même manière, accéder à ses incidents.
 
 ## Exigences non-fonctionnelles
 
